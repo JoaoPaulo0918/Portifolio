@@ -1,0 +1,669 @@
+/* Estilo geral*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #000000;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #00FF08;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+.titulo span{
+    color: #00FF08;
+}
+
+/* Estilo Cabeçalho */
+
+.topoSite {
+    display: flex;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 2%;
+}
+
+
+.logoImg{
+    height: 9rem;
+    width: 9rem;
+}
+
+.a{
+    color: #6b6b6b;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.topoSite .navMenu ul{
+    list-style-type: none;
+}
+
+.navMenu ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+
+/*Estilo menu mobile*/
+.menuMobile{
+    display: none;
+}
+
+.menu-mobile{
+    background-color: #000000ce;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.btn-fechar{
+    padding: 20px 6%;
+}
+
+.btn-fechar i{
+    color: #00FF08;
+    font-size: 25px;
+}
+
+.btn-fechar i:hover{
+    cursor: pointer;
+}
+
+.menu-mobile .subMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.menu-mobile li{
+    width: 100%;
+    text-align: right;
+    list-style-type: none;
+    padding: 22px 8%;
+}
+
+.menu-mobile li .menuLink{
+    font-size: 28px;
+    font-weight: 300;
+    text-decoration: none;
+    color:#fff;
+}
+
+.menu-mobile li:hover{
+    background-color: #00FF08;
+}
+
+.subMenu{
+    display: flex;
+    width: 100vw;
+    padding: 0 4%;
+    height: 50vh;
+}
+
+.overlay-menu{
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/*Fim*/
+
+
+.logoMeio{
+    width: 18rem;
+    height: 12rem;
+    box-shadow: 0px 0px 15px 1px #00ff0865;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+
+}
+
+.logoMeio:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px 1px #00ff0894;
+    width: 18rem;
+    height: 12rem;
+    transition: 2s;
+    
+}
+
+/*Corpo do site*/
+
+section.corpo-do-site{
+    padding: 40px 4%;
+    margin-top: 80px;
+}
+
+section.corpo-do-site .flex{
+    align-items: center;
+    justify-self: center;
+    gap: 90px;
+}
+
+.corpo-do-site .txt-corpo-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.corpo-do-site .txt-corpo-site span{
+    color: #00FF08;
+}
+
+.corpo-do-site .txt-corpo-site p{
+    color: #fff;
+    margin: 40px 0;
+    text-align: justify;
+}
+
+.img-corpo-site{
+    display: flex;
+    justify-content: center;
+}
+
+/* Epecialidades */
+
+section.especialidades{
+    padding: 40px 4%;
+    margin-top: 120px;
+    
+}
+
+.especialidadesGerais{
+    margin-top: 3rem;
+}
+
+.interface .flex{
+    gap: 60px;
+}
+
+.div-box, .div-boxGeral{
+    color: #fff;
+    padding: 40px;
+    margin-top: 65px;
+    border-radius: 20px;
+}
+
+.div-box:hover, .div-boxGeral:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ff0880;
+    cursor: pointer;
+}
+
+.div-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.div-boxGeral h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.tituloGeral{
+    margin-top: 17px;
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+.tituloGeral span{
+    color: #00FF08;
+}
+
+.bi-code-square, .bi-body-text,
+.bi-credit-card-2-front{
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.div-box p, .div-boxGeral p {
+    text-align: justify;
+}
+
+/*Estilo do sobre*/
+
+.sobre{
+    padding: 80px 4%;
+    margin-top: 80px;
+}
+
+.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+
+.img-sobre{
+    display: flex;
+    width: 45rem;
+    height: 30rem;
+    
+}
+
+.euImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.txt-sobre h2 span{
+    display: block;
+    color: #00FF08;
+}
+
+.txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-Social{
+    display: flex;
+    padding: 0 auto;
+}
+
+.btn-Social button{
+    background-color: #00FF08 ;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 7px;
+    transition: .2s;
+}
+
+.btn-Social i{
+    font-size: 27px;
+    color: #000000;
+    cursor: pointer;
+}
+
+/*Portifólio*/
+
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    margin-top: 120px;
+    
+}
+
+.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: 100% auto; /* Largura 100%, altura automática */
+    background-position: center top;
+    transition: background-position 10s ease;
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #00FF08;
+}
+
+.img-port:hover {
+    background-position: center bottom;
+}
+
+.img-port .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b6;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+
+/*Estilo formulário*/
+
+section.formulario{
+    padding: 80px 4%;
+    margin-top: 120px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+form input, textarea{
+    width: 60%;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+.btn-enviar{
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn-enviar .submit{
+    width: 120px;
+    background-color: #00FF08;
+    color: #000000;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.submit:hover{
+    box-shadow: 0px 0px 8px #00FF08;
+    transform: scale(1.05);
+}
+
+
+/*Estilo do rodapé*/
+
+footer{
+    padding: 40px 2%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    margin-top: 120px;
+}
+
+footer .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.border p .bi-envelope-fill{
+    color: #00FF08;
+    font-size: 22px;
+    
+}
+
+.rodape-email{
+    color: #fff;
+    margin-left: 5px;
+}
+
+.border{
+    border-top: 2px solid #00FF08;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 412px) { 
+    /*classes gerais*/
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    /*topo do site*/
+    
+    /*Menu*/
+    .menu{
+        display: none;
+    }
+
+    .menuMobile{
+        display: flex;
+        width: 100%;
+        position: relative;
+        padding: 5px 6%;
+    }
+
+    .menuMobile .subMenu{
+        display: block;
+        width: 70%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+
+    .bi-list {
+        font-size: 50px;
+        color: #00FF08;
+        position: absolute;
+        
+    }
+
+    .subMenu{
+        position: fixed;
+        display: flex;
+        width: 70vw;
+        height: 100%;
+        flex-direction: column;
+        background-color: #080808de;
+        z-index: 999999;
+        padding: 10px 6%;
+        margin-left: -1.3rem;
+        gap: 55px;
+        display: none;
+        
+    }
+
+    .a{
+        display: flex;
+        margin-top: 3rem;
+        color: white;
+        font-size: 30px;
+        
+    }
+
+    .subMenu .bi-x {
+        font-size: 44px;
+        color: #00FF08;
+        cursor: pointer;
+        display: block;
+        margin-left: 80%;
+      }
+      
+
+      .btn-contato{
+        margin-top: 10rem;
+      }
+
+    /*Corpo site*/
+
+    section.corpo-do-site{
+        padding: 15px 8%;
+    }
+
+    section.corpo-do-site .flex{
+        gap: 40px;
+    }
+
+    .corpo-do-site .txt-corpo-site h1{
+        font-size: 30px;  
+    }
+
+    /*Especialidades*/
+    section.especialidades{
+        padding: 40px 9%;
+        margin-top: 60px;
+    }
+
+    .titulo{
+        font-size: 28px;
+    }
+
+    /*Sobre*/
+
+    .sobre{
+        padding: 80px 8%;
+        margin-top: 60px;
+    }
+
+    .txt-sobre h2{
+        font-size: 34px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .img-sobre{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25rem;
+        height: 30rem;
+    }
+
+    .euImg{
+        width: 80%;
+        height: 80%;
+    }
+
+    .btn-Social{
+        width: 100%;
+        text-align: center;
+        margin-top: 3.5rem; 
+    }
+
+    .btn-Social button{
+        width: 40px;
+        height: 40px;
+        margin: 0 7px;
+    }
+
+    .btn-Social i{
+        font-size: 23px;
+    }
+
+    /*Portifólio*/
+    section.portifolio{
+        padding: 80px 8%;
+        margin-top: 60px;
+        
+    }
+
+    .img-port {
+        width: 330px;
+        height: 460px;   
+    }
+
+
+    /*Formulário*/
+    section.formulario{
+        margin-top: 60px;
+    }
+
+    form{
+        margin-top: 40px;
+        gap: 16px;
+    }
+
+    form input, textarea{
+        width: 90%;
+        padding: 20px 15px;
+    }
+
+
+    /*rodapé*/
+    footer{
+        margin-top: 60px;
+    }
+
+    footer .line-footer{
+        padding: 20px 0;
+    }
+
+    footer .flex{
+        flex-direction: column;
+    }
+
+
+    footer .interface p{
+        margin-top: 1rem;
+    }
+    
+}

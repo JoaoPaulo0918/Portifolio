@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+.imageProject {
+  width: 75%;
+  height: 80dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imgPrincipal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Máscara escura com um buraco */
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right,
+      rgba(34, 34, 34, 0.767) 32%,
+      rgba(41, 41, 41, 0.459) 60%,
+      rgba(0, 0, 0, 0) 75%);
+  z-index: 0;
+  /* abaixo da .mask */
+  pointer-events: none;
+}
+
+
+.buttonDinamic {
+  width: 100%;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.divButtons {
+  display: flex;
+  margin-left: 30px;
+  width: 90%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.divButtons button {
+  background: none;
+  border: none;
+  font-size: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  padding: 200px 3%;
+  gap: 50px;
+  z-index: 2;
+  color: white;
+  font-weight: 600;
+  text-align: justify;
+  width: 70%;
+  height: 100%;
+}
+
+/*Estilo Mobile*/
+
+@media screen and (max-width: 412px) {
+  .project {
+    height: 100dvh;
+  }
+
+  .imageProject {
+    margin-top: 5.5rem;
+
+    padding: 10px 8%;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .divImage {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  .imgPrincipal {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    
+    
+    /* Faz a imagem preencher sem distorcer */
+    z-index: 9999;
+  }
+
+  .mask {
+    display: none;
+  }
+
+  .imgWrapper {
+    position: relative;
+    margin-top: -4rem;
+    margin-bottom: 0rem;
+  }
+
+  .info {
+    position: absolute;
+    width: 100%;
+    background-color: #000000;
+    z-index: 2;
+    border: none;
+  }
+
+  h2 {
+    margin-top: 15rem;
+    text-align: center;
+    margin-bottom: -2rem;
+  }
+
+
+  .buttonDinamic {
+    flex-direction: column;
+    margin-top: 22rem;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .divButtons {
+    width: 100%;
+
+  }
+
+
+}
