@@ -31,7 +31,7 @@ function Navigation() {
     <nav className='navMenu'>
       <div className="menu">
         <Link to="/" onClick={fecharMenu}>
-          <img src="sua-logo.png" className="logoImg" alt="Logo" />
+          <img src={imagens.logoPng} className="logoImg" alt="Logo" />
         </Link>
         <Link to="/Inicio" className="a" onClick={fecharMenu}>Inicio</Link>
         <Link to="/Especialidades" className="a" onClick={fecharMenu}>Especialidades</Link>
