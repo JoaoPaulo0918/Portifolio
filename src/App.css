@@ -1,0 +1,106 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.divLogo{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  
+}
+
+.logoMedida{
+  height: 32px;
+}
+
+.logoMedida:hover{
+  filter: drop-shadow(0 0 2em #646cffaa);
+  cursor: pointer;
+}
+
+#react:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  cursor: pointer;
+}
+
+
+/*forma para flutuar os icons*/
+.corpo-do-site .img-corpo-site{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+
+}
+
+
+/*Forma do carrossel logo*/
+.img-corpo-site {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.divLogo {
+  width: 100%;
+  display: flex;
+}
+
+.slider {
+  display: flex;
+  animation: slideInfinite 25s linear infinite;
+}
+
+.logoMedida {
+  width: 40px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.slider:hover {
+  animation-play-state: paused;
+}
+
+
+/* Animação */
+@keyframes slideInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/*forma de gira a logo rect*/
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#react{
+  animation: logo-spin infinite 20s linear;
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
